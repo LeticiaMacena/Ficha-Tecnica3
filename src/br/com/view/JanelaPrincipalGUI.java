@@ -27,106 +27,124 @@ public class JanelaPrincipalGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btMarca = new javax.swing.JButton();
-        btModelo = new javax.swing.JButton();
-        btAutomóvel = new javax.swing.JButton();
+        btFuncionario = new javax.swing.JButton();
+        btFuncao = new javax.swing.JButton();
+        btMenu = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(null);
 
-        btMarca.setText("Marca");
-        btMarca.setToolTipText("Marca");
-        btMarca.setBorderPainted(false);
-        btMarca.setOpaque(false);
-        btMarca.addActionListener(new java.awt.event.ActionListener() {
+        btFuncionario.setBackground(new java.awt.Color(255, 255, 255));
+        btFuncionario.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btFuncionario.setForeground(new java.awt.Color(153, 0, 255));
+        btFuncionario.setText("Funcionario");
+        btFuncionario.setToolTipText("Marca");
+        btFuncionario.setBorderPainted(false);
+        btFuncionario.setOpaque(false);
+        btFuncionario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btMarcaActionPerformed(evt);
+                btFuncionarioActionPerformed(evt);
             }
         });
+        jPanel1.add(btFuncionario);
+        btFuncionario.setBounds(380, 210, 120, 50);
 
-        btModelo.setText("Modelo");
-        btModelo.setBorderPainted(false);
-        btModelo.setFocusable(false);
-        btModelo.addActionListener(new java.awt.event.ActionListener() {
+        btFuncao.setBackground(new java.awt.Color(255, 255, 255));
+        btFuncao.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btFuncao.setForeground(new java.awt.Color(153, 0, 255));
+        btFuncao.setText("Funcao");
+        btFuncao.setBorderPainted(false);
+        btFuncao.setFocusable(false);
+        btFuncao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btModeloActionPerformed(evt);
+                btFuncaoActionPerformed(evt);
             }
         });
+        jPanel1.add(btFuncao);
+        btFuncao.setBounds(220, 210, 120, 50);
 
-        btAutomóvel.setText("Automóvel");
-        btAutomóvel.setBorderPainted(false);
-        btAutomóvel.setFocusable(false);
-        btAutomóvel.addActionListener(new java.awt.event.ActionListener() {
+        btMenu.setText("Menu");
+        btMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btAutomóvelActionPerformed(evt);
+                btMenuActionPerformed(evt);
             }
         });
+        jPanel1.add(btMenu);
+        btMenu.setBounds(260, 90, 220, 23);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btAutomóvel, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btMarca, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btModelo, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btAutomóvel, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        jButton1.setText("jButton1");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1);
+        jButton1.setBounds(130, 360, 73, 23);
+
+        jButton2.setText("jButton2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2);
+        jButton2.setBounds(280, 330, 73, 23);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 654, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 575, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btMarcaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMarcaActionPerformed
-        MarcaGui ma = new MarcaGui();
+    private void btFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btFuncionarioActionPerformed
+        FuncionarioGui ma = new FuncionarioGui();
         ma.setLocationRelativeTo(null);
         ma.setVisible(true);
-    }//GEN-LAST:event_btMarcaActionPerformed
+    }//GEN-LAST:event_btFuncionarioActionPerformed
 
-    private void btModeloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btModeloActionPerformed
-        ModeloGui mo = new ModeloGui();
-        mo.setLocationRelativeTo(null);
-        mo.setVisible(true);
-    }//GEN-LAST:event_btModeloActionPerformed
-
-    private void btAutomóvelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAutomóvelActionPerformed
-        AutomovelGui au = new AutomovelGui();
+    private void btFuncaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btFuncaoActionPerformed
+        FuncaoGui au = new FuncaoGui();
         au.setLocationRelativeTo(null);
         au.setVisible(true);
-    }//GEN-LAST:event_btAutomóvelActionPerformed
+    }//GEN-LAST:event_btFuncaoActionPerformed
+
+    private void btMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btMenuActionPerformed
+         Menu m = new Menu();
+         m.setLocationRelativeTo(null);
+         m.setVisible(true);
+    }//GEN-LAST:event_btMenuActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       AviamentoGui ag = new  AviamentoGui();
+       ag.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       ColecaoGui c = new ColecaoGui ();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
      */
    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btAutomóvel;
-    private javax.swing.JButton btMarca;
-    private javax.swing.JButton btModelo;
+    private javax.swing.JButton btFuncao;
+    private javax.swing.JButton btFuncionario;
+    private javax.swing.JButton btMenu;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
