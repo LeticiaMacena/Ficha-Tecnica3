@@ -231,7 +231,7 @@ public class InserirTecidoGui extends javax.swing.JFrame {
 
             TecidoController mc = new TecidoController();
             if(mc.salvar(m)){
-                model.addTecido(pesquisar(m.getNome(), m.getDescricao()));
+                model.addTecido((Tecido) pesquisar(m.getNome()));
             }
             dispose();
         }
